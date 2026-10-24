@@ -16,10 +16,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Configurar Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          accept-license: true
+      - name: Configurar SDK y Licencias
+        run: |
+          echo "sdk.dir=/usr/local/lib/android/sdk" > local.properties
+          yes | /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
 
       - name: Configurar Gradle 8.7
         uses: gradle/actions/setup-gradle@v4
