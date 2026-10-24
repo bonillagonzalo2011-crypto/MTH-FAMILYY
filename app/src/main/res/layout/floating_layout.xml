@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#16181C"
+    android:padding="0dp">
+
+    <!-- CABECERA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="#1E2025">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MTH FAMILY"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="X"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2C2F36"/>
+    </LinearLayout>
+
+    <!-- CUERPO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <Button
+            android:id="@+id/btn_abrir_juego"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Abrir MX Grau"
+            android:backgroundTint="#1E88E5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <Switch
+            android:id="@+id/switch_dinero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinero Infinito"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+</LinearLayout>
